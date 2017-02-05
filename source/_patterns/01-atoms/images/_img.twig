@@ -1,7 +1,7 @@
 {# if we're in pattern lab and there's no specific `img`, let's do a placeholder image #}
 {% if pl and not img %}
   {# default image style is `medium` #}
-  {% set imageStyleName = imageStyleName|default('medium') %}
+  {% set imageStyleName = imageStyleName|default('small') %}
 
   {# `imageStyles` defined in `_data/imageStyles.yaml` #}
   {% set imageStyle = imageStyles[imageStyleName] %}
@@ -17,7 +17,7 @@
 
   {# holder.js options #}
   {% set options = {
-    theme: 'gray',
+    theme: 'red',
     auto: 'yes',
     size: '8',
     lineWrap: '.9',
