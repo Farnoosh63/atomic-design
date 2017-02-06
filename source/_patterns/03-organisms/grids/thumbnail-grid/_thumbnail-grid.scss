@@ -11,3 +11,9 @@
     padding: 10%;
   }
 }
+.demo-transition {
+  transition: opacity $trans-opacity;
+  &:hover {
+    opacity: 0;
+  }
+}

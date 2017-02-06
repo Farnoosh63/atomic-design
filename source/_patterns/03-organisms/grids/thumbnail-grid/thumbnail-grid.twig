@@ -12,9 +12,8 @@
   <div class="row">
     {% for i in 0..2 %}
     <div class="col-sm-4">
-       {% include "@molecules/box-thumbnail.twig" with {
-        theme: blue
-       }%}
+      <a href="#" class="demo-transition transition-opacity"> {% include "@molecules/box-thumbnail.twig" %}
+      </a>
      </div>
      {% endfor %}
    </div>
